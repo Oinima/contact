@@ -4,25 +4,31 @@
     <title>Contact Us</title>
     <style>
         body {
-            background-color:greenyellow;
+            background-color: greenyellow;
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
             background-image: url(images/phone1.jpeg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+            height: 100vh; /* Ensures body takes full viewport height */
         }
         .container {
             max-width: 800px;
-            margin: 0 auto;
+            margin: auto; /* Center the container horizontally */
             padding: 20px;
+            height: 100%; /* Makes sure the container takes full height of the body */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Pushes the content to the top and bottom */
         }
         .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             background-color: grey;
             color: #fff;
             padding: 10px;
+            display: flex;
+            align-items: center;
         }
         .logo {
             width: 100px;
